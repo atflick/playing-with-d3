@@ -47,3 +47,23 @@ d3.select('.bar-chart-svg').selectAll('text')
   .text((d) => {return d})
   .attr('x', (d, i) => {return (i * (w / graphData.length))})
   .attr('y', (d) => {return h - d * 5})
+
+// Adding Angular to play with 2-way data binding
+angular
+  .module("d3graphs", [])
+  .controller("index",[
+    IndexControllerFunction
+  ])
+
+  function IndexControllerFunction(){
+    this.data = []
+    this.bars = 10
+    this.randomize = (dataset) => {
+      for (let i = 0; i < this.bars; i++) {
+        let num = Math.floor(Math.random() * 30);
+        dataset.push(num);
+      }
+    }
+    this.randomize(this.data)
+
+  }

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="d3graphs">
   <head>
     <meta charset="utf-8">
     <title>D3 (not Mighty Ducks)</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   </head>
-  <body>
-    <button id="randomize" name="button">Button</button>
+  <body ng-controller="index as vm">
+
+
     <section class="bar-chart">
 
     </section>
@@ -15,6 +16,16 @@
     <svg class="bar-chart-svg">
 
     </svg>
+
+    <input type="text" ng-model="vm.bars">
+
+    <button ng-click="vm.randomize(vm.data)" name="button">Button</button>
+
+    <section class="bar-chart">
+      <div ng-repeat="bar in vm.data" ng-style="{'width': bar + 'px'}">
+
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- IMPORTANT  - script placement must be down in the body.  You cannot append something to the body before it loads!! -->
