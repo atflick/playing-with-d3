@@ -1,5 +1,21 @@
 div {
-  height: 600px;
-  width: 600px;
+  /*height: 600px;
+  width: 600px;*/
   background: blue;
+}
+
+.heading-text {
+  font-style: italic;
+}
+
+.bar-chart {
+  width: 600px;
+  background: #78cf30;
+}
+
+
+.bar-chart-svg {
+  width: 600px;
+  height: 200px;
+  background: #78bdde;
 }

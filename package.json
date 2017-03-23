@@ -1,0 +1,23 @@
+{
+  "name": "playing-with-d3",
+  "version": "1.0.0",
+  "description": "Why did you choose this subject? How were you first made aware of it? What problem does it solve? How does it solve the problem (conceptually)? Why does one use it? What are the alternatives? What is it similar to, if anything? What is the history of this technology? Who built it and why? Who is maintaining it? What is your opinion on the technology after having built something with it? What are the biggest conceptual hurdles (if any) you encountered when researching this? What resources do you recommend for interested students? What article or forum was most helpful to you in learning this? What are 3 interview questions one might be asked about this technology? Also, please include the instructions necessary to...",
+  "main": "d3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atflick/playing-with-d3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atflick/playing-with-d3/issues"
+  },
+  "homepage": "https://github.com/atflick/playing-with-d3#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
